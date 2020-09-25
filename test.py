@@ -28,3 +28,4 @@ for l in range(21):
     #s2= input('*Joueur2*  Choisisser une couleur: ')
     my_board.play(n2, 'J')
     print(my_board.tab)
+print('just to make a change')
