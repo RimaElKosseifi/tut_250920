@@ -1,3 +1,5 @@
+# Dummy comment
+
 #Job01
 class Personne():
     "Personne"
@@ -24,8 +26,8 @@ class Auteur(Personne):
         liv= Livre(inp_titre, self)
         #liv.titre= inp_titre
         self.oeuvre.append(liv.titre)
-    
-        
+
+
 
 #print(A_1.nom, A_1.oeuvres)
 class Livre():
@@ -40,14 +42,14 @@ class Livre():
     def __repr__(self):
         return self.titre
 
-        
+
 
 #Job 07.389
 class Bibliotheque():
     "Bibliotheque"
     def __init__(self, nom):
         self.nom= nom
-        self.catalogue={} 
+        self.catalogue={}
     def acheter_livre(self, o_auteur, tit_livre, nb_livre):
         if tit_livre in o_auteur.listerOeuvre():
             self.catalogue[tit_livre]=nb_livre
@@ -68,12 +70,12 @@ class Bibliotheque():
             if item in list(self.catalogue.keys()):
                 self.catalogue[item]+=1
             else:
-                self.catalogue[item]=1 
+                self.catalogue[item]=1
 
 
 
 
-                
+
 class Client(Personne):
     "Client"
     def __init__(self, nom, prenom):
@@ -83,8 +85,8 @@ class Client(Personne):
     def list_collections(self):
         print('Titres: ')
         for item in self.collection:
-            print(item)    
-    
+            print(item)
+
 #Job 20.085
 import pandas as pd
 class Board():
@@ -110,5 +112,3 @@ class Board():
     def print_tab(self):
         print(self.tab)
     #def winner(self):
-        
-        
