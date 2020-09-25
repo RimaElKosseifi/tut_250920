@@ -29,3 +29,4 @@ for l in range(21):
     my_board.play(n2, 'J')
     print(my_board.tab)
 print('just to make a change')
+print('just to make a change in the BR')
